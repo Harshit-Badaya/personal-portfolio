@@ -1,0 +1,51 @@
+.feature {
+	background: url('http://lorempixel.com/1920/1080/people/') no-repeat;
+	background-position: cover;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+	
+	&:after {
+		background-color: rgba(5, 75, 155, 0.5);
+		content: " ";
+		display: block;
+		height: 10000px;
+		width: 0;
+		position: absolute;
+		top: 0;
+		width: 10000px;
+		z-index: 10;
+	}
+	
+	.content {
+		background-color: rgba(0, 0, 0, 0.3);
+		@include clearfix;
+		height: 250px;
+		margin: -125px auto 0;
+		padding: 30px;
+		position: relative;
+		text-align: center;
+		top: 50%;
+		width: 450px;
+		z-index: 20;
+		
+		.primary-headline {	margin-bottom: 5px; }
+		.secondary-headline { margin-top: 5px; }
+		.list-social-media {
+			padding-top: 20px;
+			
+			a {
+				color: $orange;
+				font-size: 16px;
+				line-height: 16px;
+				@include transition(color 0.3s ease);
+				padding: 10px;
+				
+				&:hover {
+					color: lighten($orange, 20%);
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

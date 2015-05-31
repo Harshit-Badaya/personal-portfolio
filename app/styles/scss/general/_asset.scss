@@ -1,0 +1,20 @@
+// Horizontal Rule
+hr {
+	&.hr-fade {
+		border: 0;
+		height: 1px;
+		margin: 20px 0 40px 0;
+		
+		&.line-dark { background-image: linear-gradient(to right, rgba(150, 150, 150, 0), rgba(150, 150, 150, 0.75), rgba(150, 150, 150, 0)); }
+		&.line-light { background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); }
+	}
+}
+
+// Background Colors
+.bg-white { background-color: #fff; }
+.bg-black { background-color: #000; }
+.bg-orange { background-color: $orange; }
+.bg-gray { background-color: $gray; }
+.bg-gray-light { background-color: $gray-light; }
+.bg-gray-dark { background-color: $gray-dark; }
+.bg-blue { background-color: $blue; }

@@ -1,11 +1,52 @@
-//misc settings
-@import 'config/_settings';
-@import 'config/_mixins';
+/*
+	Boostrap
+*/
 
-//frameworks
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/bootstrap-variables';
 
-//global things
-@import 'general/_reset';
-@import 'layout/_main';
 
-//pages
+/*
+	Font
+*/
+
+@import 'font/social-media';
+
+
+/*
+	Config
+*/
+
+@import 'config/globals';
+@import 'config/mixins';
+
+
+/*
+	General
+*/
+
+@import 'general/typography';
+@import 'general/asset';
+@import 'general/helper';
+
+
+/*
+	Layout
+*/
+
+@import 'layout/main';
+@import 'layout/footer';
+
+
+/*
+	Components
+*/
+
+// Feature
+@import 'component/feature/feature';
+
+// List
+@import 'component/list/list-group';
+
+// Nav
+@import 'component/nav/primary-nav';

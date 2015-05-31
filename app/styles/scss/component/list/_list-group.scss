@@ -1,0 +1,16 @@
+ul.list-group {
+	
+	/** Theme **/
+	&.theme-dark {
+		> li {
+			&.list-group-item {
+				background-color: lighten($gray-dark, 8%);
+				
+				a {
+					color: #fff;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

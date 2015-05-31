@@ -1,0 +1,53 @@
+// Body
+body {
+	color: $gray-dark;
+	font: 400 16px/24px $font-secondary;
+}
+
+// Paragraphs
+p {
+	margin: 0 0 20px;
+}
+
+// Header Tags
+h1,h2,h3,h4,h5,h6 {
+	
+	&.primary-headline {
+		font: 400 50px/58px $font-primary;
+		text-transform: uppercase;
+	}
+	
+	&.secondary-headline {
+		font: 400 38px/46px $font-primary;
+	}
+	
+	&.subhead {
+		font: 400 20px/28px $font-primary;
+		text-transform: uppercase;
+	}
+}
+
+// Colors
+.txt-white { color: #fff; }
+.txt-black { color: #fff; }
+.txt-orange { color: $orange; }
+.txt-gray { color: $gray; }
+.txt-gray-light { color: $gray-light; }
+.txt-gray-dark { color: $gray-dark; }
+.txt-blue { color: $blue; }
+
+// Alignment
+.txt-align-left { text-align: left; }
+.txt-align-center { text-align: center; }
+.txt-align-right { text-align: right; }
+
+// Sizes
+.txt-lg {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.txt-xl {
+	font-size: 24px;
+	line-height: 32px;
+}

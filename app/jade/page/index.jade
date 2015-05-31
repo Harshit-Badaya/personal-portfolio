@@ -1,4 +1,31 @@
 html
+	include ../include/head-tags.jade
+	
 	body
-		h1 My Site
-		p Welcome to my site.
+		.feature
+			.content
+				h1.primary-headline.txt-white Tim Schieber
+				h2.secondary-headline.txt-gray-light Front End Developer
+				ul.list-inline.list-social-media
+					li: a(href='https://www.linkedin.com/in/timschieber'): span.icon-socicon_linkedin
+					li: a(href='https://github.com/tschieber'): span.icon-socicon_github
+		
+		nav.primary-nav
+			.container
+				ul.list-inline.list-links.pull-left
+					li: a(href='#section-about-me') About Me
+					li: a(href='#section-skills') Skills
+					li: a(href='#section-workflow') Workflow
+					li: a(href='#section-portfolio') Portfolio
+					li: a(href='#') Contact
+				
+				a.btn.btn-primary.action(href='#') Resum&Eacute; &nbsp;<span class="glyphicon glyphicon-file"></span>
+		
+		include section/about-me.jade
+		include section/skills.jade
+		include section/workflow.jade
+		include section/portfolio.jade
+		
+		include ../include/footer.jade
+	
+		include ../include/scripts.jade

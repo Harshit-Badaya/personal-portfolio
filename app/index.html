@@ -1,7 +1,140 @@
 
 <html>
+  <!-- Fonts-->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Francois+One"/>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"/>
+  <!-- CSS-->
+  <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
   <body>
-    <h1>My Site</h1>
-    <p>Welcome to my site.</p>
+    <div class="feature">
+      <div class="content">
+        <h1 class="primary-headline txt-white">Tim Schieber</h1>
+        <h2 class="secondary-headline txt-gray-light">Front End Developer</h2>
+        <ul class="list-inline list-social-media">
+          <li><a href="https://www.linkedin.com/in/timschieber"><span class="icon-socicon_linkedin"></span></a></li>
+          <li><a href="https://github.com/tschieber"><span class="icon-socicon_github"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <nav class="primary-nav">
+      <div class="container">
+        <ul class="list-inline list-links pull-left">
+          <li><a href="#section-about-me">About Me</a></li>
+          <li><a href="#section-skills">Skills</a></li>
+          <li><a href="#section-workflow">Workflow</a></li>
+          <li><a href="#section-portfolio">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul><a href="#" class="btn btn-primary action">Resum&Eacute; &nbsp;<span class="glyphicon glyphicon-file"></span></a>
+      </div>
+    </nav>
+    <div id="section-about-me" class="section-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 padding-bottom">
+            <h3 class="primary-headline txt-align-center">About Me</h3>
+            <hr class="hr-fade line-dark"/>
+            <p class="txt-xl">Hi! My name is Tim Schieber and I am a front end developer based in Kansas City. I've been doing development for the past decade and enjoy the capabilities/challenges that code presents.</p>
+            <p>Feel free to take a look at my portfolio and drop me a line if you'd like to chat!</p>
+          </div>
+          <div class="col-sm-3"><img src="http://lorempixel.com/800/800/people/" class="img-responsive"/></div>
+          <div class="col-sm-3">
+            <h5 class="subhead">Quick Look</h5>
+            <ul class="plain">
+              <li><strong>Something:</strong> Something else</li>
+              <li><strong>Something:</strong> Something else</li>
+              <li><strong>Something:</strong> Something else</li>
+              <li><strong>Something:</strong> Something else</li>
+              <li><strong>Something:</strong> Something else</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h5 class="subhead">More Stuff</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim at ex malesuada aliquet. Etiam dignissim commodo diam, non blandit odio tempus vel. Sed vitae est nec sapien maximus fermentum sed ut nibh. Morbi sit amet sapien interdum, finibus mi nec, tempus erat. Nullam mattis est quam, id pulvinar massa placerat id. Sed egestas metus vitae molestie bibendum. Fusce et urna ut odio convallis pellentesque.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-skills" class="section-panel bg-gray-dark txt-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 padding-bottom">
+            <h3 class="primary-headline txt-align-center">Skills</h3>
+            <hr class="hr-fade line-dark"/>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="secondary-headline">HTML</h4>
+            <ul class="list-group theme-dark">
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> XHTML</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> HTML5</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Semantic Markup</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="secondary-headline">CSS</h4>
+            <ul class="list-group theme-dark">
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> CSS3</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Modular Code Patterns</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Grids</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Responsive</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Sass/Less</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Animation</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="secondary-headline">JavaScript</h4>
+            <ul class="list-group theme-dark">
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Scalable Architecture</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> DRY Code</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> jQuery</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Ajax</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Custom Plugins</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Forms</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <div class="col-sm-4"></div>
+            <h4 class="secondary-headline">Tools</h4>
+            <ul class="list-group theme-dark">
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> <a href="http://gulpjs.com/" target="_blank">Gulp</a></li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> <a href="http://jade-lang.com/" target="_blank">Jade</a></li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> <a href="https://icomoon.io/" target="_blank">Icomoon</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-workflow" class="section-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 padding-bottom">
+            <h3 class="primary-headline txt-align-center">Workflow</h3>
+            <hr class="hr-fade line-dark"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-portfolio" class="section-panel bg-gray-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 padding-bottom">
+            <h3 class="primary-headline txt-align-center">Portfolio</h3>
+            <hr class="hr-fade line-dark"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="txt-white">Tim Schieber</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="scripts/bootstrap/bootstrap.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
