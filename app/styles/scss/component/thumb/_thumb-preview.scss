@@ -1,0 +1,41 @@
+.thumb-preview {
+	@include border-radius(20px);
+	display: block;
+	margin: 0 0 30px 0;
+	overflow: hidden;
+	position: relative;
+	
+	&:after {
+		content: " ";
+		display: block;
+		height: 10000px;
+		left: 0;
+		@include opacity(0.9);
+		position: absolute;
+		top: 0;
+		width: 10000px;
+		z-index: 10;
+	}
+	
+	/** Colors **/
+	&.shade-blue { &:after { background-color: $blue; } }
+	&.shade-orange { &:after { background-color: $orange; } }
+	&.shade-gray-dark { &:after { background-color: $gray-dark; } }
+	
+	.content {
+		margin-top: -48px;
+		padding: 0 20px;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		z-index: 20;
+		
+		.subtitle {
+			color: $gray-light;
+		}
+		
+		.action {
+			margin-top: 20px;
+		}
+	}
+}

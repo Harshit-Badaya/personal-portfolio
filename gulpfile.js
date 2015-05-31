@@ -46,7 +46,7 @@ gulp.task('images-deploy', function() {
 });
 
 //compiling our Javascripts
-gulp.task('scripts', function() {
+gulp.task('scripts-app', function() {
     //this is where our dev JS scripts are
     return gulp.src(['app/scripts/app/**/*.js'])
                 //this is the filename of the compressed version of our JS
@@ -61,10 +61,25 @@ gulp.task('scripts', function() {
                .pipe(browserSync.reload({stream: true}));
 });
 
+gulp.task('scripts-plugin', function() {
+    //this is where our dev JS scripts are
+    return gulp.src(['app/scripts/plugin/**/*.js'])
+                //this is the filename of the compressed version of our JS
+               .pipe(concat('plugin.js'))
+               //catch errors
+               .on('error', gutil.log)
+               //compress :D
+               .pipe(uglify())
+               //where we will store our finalized, compressed script
+               .pipe(gulp.dest('app/scripts'));
+});
+
+gulp.task('scripts', ['scripts-app']);
+
 //compiling our Javascripts for deployment
 gulp.task('scripts-deploy', function() {
     //this is where our dev JS scripts are
-    return gulp.src(['app/scripts/src/_includes/**/*.js', 'app/scripts/src/**/*.js'])
+    return gulp.src(['app/scripts/**/*.js'])
                 //this is the filename of the compressed version of our JS
                .pipe(concat('app.js'))
                //compress :D
@@ -126,7 +141,7 @@ gulp.task('styles-deploy', function() {
 //compiling our Jade
 gulp.task('jade', function() {
     //this is where our Jade files are
-    return gulp.src(['app/jade/page/**/*.jade'])
+    return gulp.src(['app/jade/page/*.jade'])
                //catch errors
                .on('error', gutil.log)
                //Jade options
@@ -191,7 +206,7 @@ gulp.task('scaffold', function() {
 //  compress all scripts and SCSS files
 gulp.task('default', ['browserSync', 'scripts', 'styles'], function() {
     //a list of watchers, so it will watch all of the following files waiting for changes
-    gulp.watch('app/scripts/src/**', ['scripts']);
+    gulp.watch('app/scripts/**', ['scripts']);
     gulp.watch('app/styles/scss/**', ['styles']);
     gulp.watch('app/images/**', ['images']);
     gulp.watch('app/jade/**', ['jade']);

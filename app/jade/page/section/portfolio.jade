@@ -4,3 +4,34 @@
 			.col-sm-12.padding-bottom
 				h3.primary-headline.txt-align-center Portfolio
 				hr.hr-fade.line-dark
+				
+				.txt-align-center.padding-bottom
+					.btn-group#portfolioFilter(role='group')
+						button.btn.btn-default.active(type='button') All
+						button.btn.btn-default(type='button') Responsive
+						button.btn.btn-default(type='button') Integrated
+						button.btn.btn-default(type='button') Tool
+			
+		.row#portfolioItems
+			.col-sm-3.portfolio-item(data-category='Responsive')
+				.thumb-preview.shade-blue
+					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
+					.content.txt-align-center
+						h6.subhead.lg.txt-white Project Name
+						.subtitle Some sub text
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalTest') View Details
+				include ../modal/project-example.jade
+			
+			.col-sm-3.portfolio-item
+				.thumb-preview.shade-orange
+					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
+					.content.txt-align-center
+						h6.subhead.lg.txt-white Project Name
+						.subtitle Some sub text
+			
+			.col-sm-3.portfolio-item
+				.thumb-preview.shade-gray-dark
+					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
+					.content.txt-align-center
+						h6.subhead.lg.txt-white Project Name
+						.subtitle Some sub text

@@ -39,6 +39,15 @@
 
 
 /*
+	Plugin
+*/
+
+// Slick Carousel
+@import 'plugin/slick/slick';
+@import 'plugin/slick/slick-theme';
+
+
+/*
 	Components
 */
 
@@ -50,3 +59,6 @@
 
 // Nav
 @import 'component/nav/primary-nav';
+
+// Thumb
+@import 'component/thumb/thumb-preview';
