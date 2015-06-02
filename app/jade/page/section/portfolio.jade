@@ -8,30 +8,107 @@
 				.txt-align-center.padding-bottom
 					.btn-group#portfolioFilter(role='group')
 						button.btn.btn-default.active(type='button') All
-						button.btn.btn-default(type='button') Responsive
-						button.btn.btn-default(type='button') Integrated
+						button.btn.btn-default(type='button') Marketing
+						button.btn.btn-default(type='button') Template
 						button.btn.btn-default(type='button') Tool
+						button.btn.btn-default(type='button') Other
 			
 		.row#portfolioItems
-			.col-sm-3.portfolio-item(data-category='Responsive')
+			.col-sm-3.portfolio-item(data-category='Marketing')
 				.thumb-preview.shade-blue
 					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
 					.content.txt-align-center
-						h6.subhead.lg.txt-white Project Name
-						.subtitle Some sub text
-						button.btn.btn-default.action(data-toggle='modal' data-target='#modalTest') View Details
-				include ../modal/project-example.jade
+						h6.subhead.lg.txt-white Garmin: Fenix 3
+						.subtitle Marketing Page
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalProjectGarminFenix3') View Details
+				include ../modal/project-garmin-fenix3.jade
+				
+			.col-sm-3.portfolio-item(data-category='Marketing')
+				.thumb-preview.shade-blue
+					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
+					.content.txt-align-center
+						h6.subhead.lg.txt-white Garmin: Viago
+						.subtitle Marketing Page
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalProjectGarminViago') View Details
+				include ../modal/project-garmin-viago.jade
 			
-			.col-sm-3.portfolio-item
+			.col-sm-3.portfolio-item(data-category='Template')
 				.thumb-preview.shade-orange
 					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
 					.content.txt-align-center
-						h6.subhead.lg.txt-white Project Name
-						.subtitle Some sub text
+						h6.subhead.lg.txt-white Children's Mercy: Inside Pediatrics
+						.subtitle Micro Site
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalProjectCMHInsidePediactrics') View Details
+				include ../modal/project-cmh-inside-pediatrics.jade
 			
-			.col-sm-3.portfolio-item
+			.col-sm-3.portfolio-item(data-category='Template')
+				.thumb-preview.shade-orange
+					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
+					.content.txt-align-center
+						h6.subhead.lg.txt-white Children's Mercy: Marketing Pages
+						.subtitle Customizable Templates
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalProjectCMHMarketingPages') View Details
+				include ../modal/project-cmh-marketing-pages.jade
+			
+			.col-sm-3.portfolio-item(data-category='Tool')
 				.thumb-preview.shade-gray-dark
 					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
 					.content.txt-align-center
-						h6.subhead.lg.txt-white Project Name
-						.subtitle Some sub text
+						h6.subhead.lg.txt-white Level Five: Color Contrast Checker
+						.subtitle Online Tool
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalProjectL5ColorContrastChecker') View Details
+				include ../modal/project-l5-color-contrast-checker.jade
+			
+			.col-sm-3.portfolio-item(data-category='Marketing')
+				.thumb-preview.shade-blue
+					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
+					.content.txt-align-center
+						h6.subhead.lg.txt-white Level Five: Coffee & Design
+						.subtitle Marketing Page
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalProjectL5CoffeeAndDesign') View Details
+				include ../modal/project-l5-coffee-and-design.jade
+			
+			.col-sm-3.portfolio-item(data-category='Template')
+				.thumb-preview.shade-orange
+					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
+					.content.txt-align-center
+						h6.subhead.lg.txt-white HYLA Mobile: Customer Portal
+						.subtitle Static Templates
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalProjectHylaCustomerPortal') View Details
+				include ../modal/project-hyla-customer-portal.jade
+			
+			.col-sm-3.portfolio-item(data-category='Template')
+				.thumb-preview.shade-orange
+					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
+					.content.txt-align-center
+						h6.subhead.lg.txt-white HYLA Mobile: Customer Portal
+						.subtitle Static Templates
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalProjectHylaATTBuyback') View Details
+				include ../modal/project-hyla-att-buyback.jade
+			
+			.col-sm-3.portfolio-item(data-category='Tool')
+				.thumb-preview.shade-gray-dark
+					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
+					.content.txt-align-center
+						h6.subhead.lg.txt-white Nope: Hello
+						.subtitle Online Tool
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalProjectNopeHello') View Details
+				include ../modal/project-nope-hello.jade
+			
+			.col-sm-3.portfolio-item(data-category='Other')
+				.thumb-preview.shade-green
+					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
+					.content.txt-align-center
+						h6.subhead.lg.txt-white JSFiddle: Snippets
+						.subtitle Code Snippets
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalAAFPPublicSite') View Details
+				include ../modal/project-other-jsfiddle.jade
+			
+			.col-sm-3.portfolio-item(data-category='Template')
+				.thumb-preview.shade-orange
+					img.img-responsive(src='http://lorempixel.com/600/600/technics/')
+					.content.txt-align-center
+						h6.subhead.lg.txt-white AAFP: Public Site
+						.subtitle Static Templates
+						button.btn.btn-default.action(data-toggle='modal' data-target='#modalAAFPPublicSite') View Details
+				include ../modal/project-aafp-public-site.jade

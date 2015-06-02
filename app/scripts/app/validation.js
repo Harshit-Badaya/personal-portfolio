@@ -13,6 +13,10 @@ $.validator.setDefaults({
 	errorPlacement: function(error, element) {
 		element.addClass('invalid').closest('.form-group').addClass('has-error').append(error);
 	},
+	
+	success: function(element) {
+		element.closest('.form-group').removeClass('has-error');
+	},
 
 	submitHandler: function(form, event) {
 		event.preventDefault();

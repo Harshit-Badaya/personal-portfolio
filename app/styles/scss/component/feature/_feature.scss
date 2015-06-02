@@ -1,6 +1,6 @@
 .feature {
-	background: url('http://lorempixel.com/1920/1080/people/') no-repeat;
-	background-position: cover;
+	background: url('../../images/desktop.jpg') no-repeat;
+	background-position: center;
 	height: 600px;
 	overflow: hidden;
 	position: relative;
@@ -18,7 +18,7 @@
 	}
 	
 	.content {
-		background-color: rgba(0, 0, 0, 0.3);
+		background-color: rgba(0, 0, 0, 0.7);
 		@include clearfix;
 		height: 250px;
 		margin: -125px auto 0;

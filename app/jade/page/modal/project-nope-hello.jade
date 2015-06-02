@@ -1,0 +1,22 @@
+extends ../../template/modal.jade
+
+block vars
+	- var modal_id = 'modalProjectNopeHello'
+	- var title = 'Nope: Hello'
+
+block content
+	.row
+		.col-sm-6
+			img.img-responsive(src='http://lorempixel.com/800/800/people/')
+		
+		.col-sm-6
+			h6.secondary-headline.sm Description
+			p Tablet web application to act as contact service in offices. User would choose employee from list on iPad device -- that employee would then be sent an instant message, text message and phone call in sequential order letting them know they have a visitor. Awarded 2nd place at 2013 Rails Rumble. Built in 48 hours with team of four.
+			
+			h6.secondary-headline.sm Features
+			ul
+				li Made for iPad devices
+				li Integrated with Ruby on Rails
+			
+			.padding-top
+				a(href='http://r13.railsrumble.com/entries/winners' target='_blank') http://r13.railsrumble.com/entries/winners

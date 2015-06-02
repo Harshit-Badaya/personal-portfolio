@@ -1,0 +1,23 @@
+extends ../../template/modal.jade
+
+block vars
+	- var modal_id = 'modalProjectL5ColorContrastChecker'
+	- var title = 'Level Five: Color Contrast Checker'
+
+block content
+	.row
+		.col-sm-6
+			img.img-responsive(src='http://lorempixel.com/800/800/people/')
+		
+		.col-sm-6
+			h6.secondary-headline.sm Description
+			p Tool to compare color contrasts for usability purposes. Palettes can be sent via URL for sharing.
+			
+			h6.secondary-headline.sm Features
+			ul
+				li Custom jQuery plugin
+				li Adheres to web accessibility guidelines
+				li Can share palettes/results
+			
+			.padding-top
+				a(href='http://color-contrast-checker.plugins.levelfivesolutions.net/admin.html' target='_blank') http://color-contrast-checker.plugins.levelfivesolutions.net/admin.html

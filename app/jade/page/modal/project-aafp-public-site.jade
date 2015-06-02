@@ -1,0 +1,22 @@
+extends ../../template/modal.jade
+
+block vars
+	- var modal_id = 'modalAAFPPublicSite'
+	- var title = 'AAFP: Public Site'
+
+block content
+	.row
+		.col-sm-6
+			img.img-responsive(src='http://lorempixel.com/800/800/people/')
+		
+		.col-sm-6
+			h6.secondary-headline.sm Description
+			p Public web site for American Academy of Family Physicians. I developed static templates that were then integrated into Adobe CQ.
+			
+			h6.secondary-headline.sm Features
+			ul
+				li Large library of styles created
+				li Responsive
+			
+			.padding-top
+				a(href='http://www.aafp.org/' target='_blank') http://www.aafp.org/

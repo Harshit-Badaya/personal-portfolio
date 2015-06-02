@@ -1,0 +1,24 @@
+extends ../../template/modal.jade
+
+block vars
+	- var modal_id = 'modalProjectGarminViago'
+	- var title = 'Garmin: Viago'
+
+block content
+	.row
+		.col-sm-6
+			img.img-responsive(src='http://lorempixel.com/800/800/people/')
+		
+		.col-sm-6
+			h6.secondary-headline.sm Description
+			p Marketing page for navigation app. Needed to be built in Code Ignitor framework, be fully responsive and feature animated elements. 
+			
+			h6.secondary-headline.sm Features
+			ul
+				li Responsive
+				li Animated SVG's
+				li Animations triggered on scroll
+				li Built in Code Ignitor
+			
+			.padding-top
+				a(href='http://sites.garmin.com/en-US/viago/' target='_blank') http://sites.garmin.com/en-US/viago/

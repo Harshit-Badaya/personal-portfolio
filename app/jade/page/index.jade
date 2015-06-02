@@ -19,12 +19,21 @@ html
 		
 		nav#primaryNav.primary-nav
 			.container
-				ul.list-inline.list-links.pull-left
+				ul.list-inline.list-links.pull-left.hidden-xs
 					li: a(href='#section-about-me') About Me
 					li: a(href='#section-skills') Skills
 					li: a(href='#section-portfolio') Portfolio
 					li: a(href='#section-workflow') Workflow
 					li: a(href='#section-contact') Contact
+				
+				.dropdown.visible-xs
+					button.btn.btn-default.dropdown-toggle(type='button' id='primaryNavDropdown' data-toggle='dropdown' aria-expanded='false') Menu <span class="caret"></span>
+					ul.dropdown-menu(role='menu' aria-labelledby='primaryNavDropdown')
+						li(role='presentation'): a(role='menuitem' tabindex='-1' href='#section-about-me') About Me
+						li(role='presentation'): a(role='menuitem' tabindex='-1' href='#section-skills') Skills
+						li(role='presentation'): a(role='menuitem' tabindex='-1' href='#section-portfolio') Portfolio
+						li(role='presentation'): a(role='menuitem' tabindex='-1' href='#section-workflow') Workflow
+						li(role='presentation'): a(role='menuitem' tabindex='-1' href='#section-contact') Contact
 				
 				a.btn.btn-primary.action(href='#') Resum&Eacute; &nbsp;<span class="glyphicon glyphicon-file"></span>
 		

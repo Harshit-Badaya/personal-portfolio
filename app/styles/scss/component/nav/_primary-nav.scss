@@ -36,3 +36,15 @@
 		top: 0;
 	}
 }
+
+
+@media screen and (max-width: $screen-sm) {
+	.primary-nav {
+		.container {
+			.action {
+				right: 20px;
+				top: 0;
+			}
+		}
+	}
+}

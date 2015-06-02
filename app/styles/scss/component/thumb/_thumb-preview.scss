@@ -19,14 +19,15 @@
 	
 	/** Colors **/
 	&.shade-blue { &:after { background-color: $blue; } }
+	&.shade-blue-light { &:after { background-color: $blue-light; } }
 	&.shade-orange { &:after { background-color: $orange; } }
 	&.shade-gray-dark { &:after { background-color: $gray-dark; } }
+	&.shade-green { &:after { background-color: $green; } }
 	
 	.content {
-		margin-top: -48px;
 		padding: 0 20px;
 		position: absolute;
-		top: 50%;
+		top: 40px;
 		width: 100%;
 		z-index: 20;
 		
@@ -36,6 +37,22 @@
 		
 		.action {
 			margin-top: 20px;
+		}
+	}
+}
+
+
+@media screen and (max-width: $screen-lg) {
+	.thumb-preview {
+		.content {
+			padding: 0 10px;
+			top: 20px;
+			.subhead {
+				font-size: 16px;
+				line-height: 20px;
+			}
+			.subtitle { display: none; }
+			.action { margin-top: 10px; }
 		}
 	}
 }
