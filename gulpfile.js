@@ -12,7 +12,6 @@ uglify      = require('gulp-uglify');
 jade        = require('gulp-jade');
 sass        = require('gulp-sass');
 sourceMaps  = require('gulp-sourcemaps');
-imagemin    = require('gulp-imagemin');
 minifyCSS   = require('gulp-minify-css');
 browserSync = require('browser-sync');
 autoprefixer = require('gulp-autoprefixer');
@@ -29,20 +28,6 @@ gulp.task('browserSync', function() {
         },
         notify: false
     });
-});
-
-
-//compressing images & handle SVG files
-gulp.task('images', function(tmp) {
-    gulp.src(['app/images/*.jpg', 'app/images/*.png'])
-        .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
-        .pipe(gulp.dest('app/images'));
-});
-
-//compressing images & handle SVG files
-gulp.task('images-deploy', function() {
-    gulp.src(['app/images/**/*', '!app/images/README'])
-        .pipe(gulp.dest('dist/images'));
 });
 
 //compiling our Javascripts
@@ -74,12 +59,25 @@ gulp.task('scripts-plugin', function() {
                .pipe(gulp.dest('app/scripts'));
 });
 
-gulp.task('scripts', ['scripts-app']);
+gulp.task('scripts-lib', function() {
+    //this is where our dev JS scripts are
+    return gulp.src(['app/scripts/lib/**/*.js'])
+                //this is the filename of the compressed version of our JS
+               .pipe(concat('lib.js'))
+               //catch errors
+               .on('error', gutil.log)
+               //compress :D
+               .pipe(uglify())
+               //where we will store our finalized, compressed script
+               .pipe(gulp.dest('app/scripts'));
+});
+
+gulp.task('scripts', ['scripts-app', 'scripts-plugin', 'scripts-lib']);
 
 //compiling our Javascripts for deployment
-gulp.task('scripts-deploy', function() {
+gulp.task('scripts-app-deploy', function() {
     //this is where our dev JS scripts are
-    return gulp.src(['app/scripts/**/*.js'])
+    return gulp.src(['app/scripts/app/**/*.js'])
                 //this is the filename of the compressed version of our JS
                .pipe(concat('app.js'))
                //compress :D
@@ -87,6 +85,30 @@ gulp.task('scripts-deploy', function() {
                //where we will store our finalized, compressed script
                .pipe(gulp.dest('dist/scripts'));
 });
+
+gulp.task('scripts-plugin-deploy', function() {
+    //this is where our dev JS scripts are
+    return gulp.src(['app/scripts/plugin/**/*.js'])
+                //this is the filename of the compressed version of our JS
+               .pipe(concat('plugin.js'))
+               //compress :D
+               .pipe(uglify())
+               //where we will store our finalized, compressed script
+               .pipe(gulp.dest('dist/scripts'));
+});
+
+gulp.task('scripts-lib-deploy', function() {
+    //this is where our dev JS scripts are
+    return gulp.src(['app/scripts/lib/**/*.js'])
+                //this is the filename of the compressed version of our JS
+               .pipe(concat('lib.js'))
+               //compress :D
+               .pipe(uglify())
+               //where we will store our finalized, compressed script
+               .pipe(gulp.dest('dist/scripts'));
+});
+
+gulp.task('scripts-deploy', ['scripts-app-deploy', 'scripts-plugin-deploy', 'scripts-lib-deploy']);
 
 //compiling our SCSS files
 gulp.task('styles', function() {
@@ -208,10 +230,9 @@ gulp.task('default', ['browserSync', 'scripts', 'styles'], function() {
     //a list of watchers, so it will watch all of the following files waiting for changes
     gulp.watch('app/scripts/**', ['scripts']);
     gulp.watch('app/styles/scss/**', ['styles']);
-    gulp.watch('app/images/**', ['images']);
     gulp.watch('app/jade/**', ['jade']);
     gulp.watch('app/*.html', ['html']);
 });
 
 //this is our deployment task, it will set everything for deployment-ready files
-gulp.task('deploy', gulpSequence('clean', 'scaffold', ['scripts-deploy', 'styles-deploy', 'images-deploy'], 'html-deploy'));
+gulp.task('deploy', gulpSequence('clean', 'scaffold', ['scripts-deploy', 'styles-deploy'], 'html-deploy'));

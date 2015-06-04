@@ -1,29 +1,649 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Website Title</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="styles/styles.css">
-    </head>
-    <body>
-
-        <!-- Add your site or application content here -->
-        <p>Content</p>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-        
-        <script src="scripts/app.js"></script>
-    </body>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Tim Schieber | Front End Developer</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Fonts-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Francois+One"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"/>
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+  </head>
+  <body>
+    <div id="feature" class="feature">
+      <div class="content">
+        <h1 class="primary-headline txt-white">Tim Schieber</h1>
+        <h2 class="secondary-headline txt-gray-light">Front End Developer</h2>
+        <ul class="list-inline list-social-media">
+          <li><a href="https://www.linkedin.com/in/timschieber"><span class="icon-socicon_linkedin"></span></a></li>
+          <li><a href="https://github.com/tschieber"><span class="icon-socicon_github"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <nav id="primaryNav" class="primary-nav">
+      <div class="container">
+        <ul class="list-inline list-links pull-left hidden-xs">
+          <li><a href="#section-about-me">About Me</a></li>
+          <li><a href="#section-skills">Skills</a></li>
+          <li><a href="#section-portfolio">Portfolio</a></li>
+          <li><a href="#section-workflow">Workflow</a></li>
+          <li><a href="#section-contact">Contact</a></li>
+        </ul>
+        <div class="dropdown visible-xs">
+          <button type="button" id="primaryNavDropdown" data-toggle="dropdown" aria-expanded="false" class="btn btn-default dropdown-toggle">Menu <span class="caret"></span></button>
+          <ul role="menu" aria-labelledby="primaryNavDropdown" class="dropdown-menu">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#section-about-me">About Me</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#section-skills">Skills</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#section-portfolio">Portfolio</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#section-workflow">Workflow</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#section-contact">Contact</a></li>
+          </ul>
+        </div><a href="#" class="btn btn-primary action">Resum&Eacute; &nbsp;<span class="glyphicon glyphicon-file"></span></a>
+      </div>
+    </nav>
+    <div id="section-about-me" class="section-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 padding-bottom">
+            <h3 class="primary-headline txt-align-center">About Me</h3>
+            <hr class="hr-fade line-dark"/>
+            <p class="txt-xl">Hi! My name is Tim Schieber and I am a front end developer based in Kansas City. I've been doing development for the past decade and enjoy the capabilities/challenges that code presents.</p>
+            <p>Feel free to take a look at my portfolio and drop me a line if you'd like to chat!</p>
+          </div>
+          <div class="col-sm-3"><img src="images/profile.jpg" class="img-responsive"/></div>
+          <div class="col-sm-5">
+            <h5 class="subhead">Quick Look</h5>
+            <ul class="plain">
+              <li><strong>Specialty:</strong> HTML/CSS/JavaScript</li>
+              <li><strong>Experience:</strong> Agency, Corporate and Contractor</li>
+              <li><strong>Education:</strong> Buena Vista University, Storm Lake, IA</li>
+              <li><strong>Notable Clients:</strong>
+                <ul>
+                  <li>BNSF Railway</li>
+                  <li>Children's Mercy Hospital</li>
+                  <li>HYLA Mobile</li>
+                  <li>Garmin</li>
+                  <li>Sprint</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h5 class="subhead">Notes About Me</h5>
+            <p>I love ridiculous internet memes, Sporting KC, terrible 80s action movies and sushi. I've been to Japan and would like to travel to Germany. Kingdom Rush is the best tower defense game ever made.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-skills" class="section-panel bg-gray-dark txt-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 padding-bottom">
+            <h3 class="primary-headline txt-align-center">Skills</h3>
+            <hr class="hr-fade line-dark"/>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="secondary-headline">HTML</h4>
+            <ul class="list-group theme-dark">
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> XHTML</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> HTML5</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Semantic Markup</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="secondary-headline">CSS</h4>
+            <ul class="list-group theme-dark">
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> CSS3</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Modular Code Patterns</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Grids</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Responsive</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Sass/Less</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Animation</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="secondary-headline">JavaScript</h4>
+            <ul class="list-group theme-dark">
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Scalable Architecture</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> DRY Code</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> jQuery</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Ajax</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Custom Plugins</li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> Forms</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <div class="col-sm-4"></div>
+            <h4 class="secondary-headline">Tools</h4>
+            <ul class="list-group theme-dark">
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> <a href="http://gulpjs.com/" target="_blank">Gulp</a></li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> <a href="http://jade-lang.com/" target="_blank">Jade</a></li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-ok padding-right"></span> <a href="https://icomoon.io/" target="_blank">Icomoon</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-portfolio" class="section-panel bg-gray-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 padding-bottom">
+            <h3 class="primary-headline txt-align-center">Portfolio</h3>
+            <hr class="hr-fade line-dark"/>
+            <div class="txt-align-center padding-bottom">
+              <div id="portfolioFilter" role="group" class="btn-group">
+                <button type="button" class="btn btn-default active">All</button>
+                <button type="button" class="btn btn-default">Marketing</button>
+                <button type="button" class="btn btn-default">Template</button>
+                <button type="button" class="btn btn-default">Tool</button>
+                <button type="button" class="btn btn-default">Other</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="portfolioItems" class="row">
+          <div data-category="Marketing" class="col-sm-3 portfolio-item">
+            <div class="thumb-preview shade-blue"><img src="images/screenshots/garmin-fenix3.jpg" class="img-responsive"/>
+              <div class="content txt-align-center">
+                <h6 class="subhead lg txt-white">Garmin: Fenix 3</h6>
+                <div class="subtitle">Marketing Page</div>
+                <button data-toggle="modal" data-target="#modalProjectGarminFenix3" class="btn btn-default action">View Details</button>
+              </div>
+            </div>
+            <div id="modalProjectGarminFenix3" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title subhead">Garmin: Fenix 3</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="images/screenshots/garmin-fenix3.jpg" class="img-responsive"/></div>
+                      <div class="col-sm-6">
+                        <h6 class="secondary-headline sm">Description</h6>
+                        <p>Marketing page for fitness watch. Was built in Laravel framework and was fully responsive. </p>
+                        <h6 class="secondary-headline sm">Features</h6>
+                        <ul>
+                          <li>Responsive</li>
+                          <li>Built in Laravel</li>
+                        </ul>
+                        <div class="padding-top"><a href="http://fenix3.garmin.com/en-US/" target="_blank">http://fenix3.garmin.com/en-US/</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="Marketing" class="col-sm-3 portfolio-item">
+            <div class="thumb-preview shade-blue"><img src="images/screenshots/garmin-viago.jpg" class="img-responsive"/>
+              <div class="content txt-align-center">
+                <h6 class="subhead lg txt-white">Garmin: Viago</h6>
+                <div class="subtitle">Marketing Page</div>
+                <button data-toggle="modal" data-target="#modalProjectGarminViago" class="btn btn-default action">View Details</button>
+              </div>
+            </div>
+            <div id="modalProjectGarminViago" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title subhead">Garmin: Viago</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="images/screenshots/garmin-viago.jpg" class="img-responsive"/></div>
+                      <div class="col-sm-6">
+                        <h6 class="secondary-headline sm">Description</h6>
+                        <p>Marketing page for navigation app. Needed to be built in Code Ignitor framework, be fully responsive and feature animated elements. </p>
+                        <h6 class="secondary-headline sm">Features</h6>
+                        <ul>
+                          <li>Responsive</li>
+                          <li>Animated SVG's</li>
+                          <li>Animations triggered on scroll</li>
+                          <li>Built in Code Ignitor</li>
+                        </ul>
+                        <div class="padding-top"><a href="http://sites.garmin.com/en-US/viago/" target="_blank">http://sites.garmin.com/en-US/viago/</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="Template" class="col-sm-3 portfolio-item">
+            <div class="thumb-preview shade-orange"><img src="images/screenshots/cmh-inside-pediatrics.jpg" class="img-responsive"/>
+              <div class="content txt-align-center">
+                <h6 class="subhead lg txt-white">Children's Mercy: Inside Pediatrics</h6>
+                <div class="subtitle">Micro Site</div>
+                <button data-toggle="modal" data-target="#modalProjectCMHInsidePediactrics" class="btn btn-default action">View Details</button>
+              </div>
+            </div>
+            <div id="modalProjectCMHInsidePediactrics" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title subhead">Childrens Mercy Hospital: Inside Pediatrics</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="images/screenshots/cmh-inside-pediatrics.jpg" class="img-responsive"/></div>
+                      <div class="col-sm-6">
+                        <h6 class="secondary-headline sm">Description</h6>
+                        <p>Micro site to showcase Inside Pediactrics television series. Lots of video and fully responsive.</p>
+                        <h6 class="secondary-headline sm">Features</h6>
+                        <ul>
+                          <li>Social Media</li>
+                          <li>Heavy Video Content</li>
+                          <li>Responsive</li>
+                        </ul>
+                        <div class="padding-top"><a href="http://www.insidepediatrics.com/" target="_blank">http://www.insidepediatrics.com/</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="Template" class="col-sm-3 portfolio-item">
+            <div class="thumb-preview shade-orange"><img src="images/screenshots/cmh-marketing-pages.jpg" class="img-responsive"/>
+              <div class="content txt-align-center">
+                <h6 class="subhead lg txt-white">Children's Mercy: Marketing Pages</h6>
+                <div class="subtitle">Customizable Templates</div>
+                <button data-toggle="modal" data-target="#modalProjectCMHMarketingPages" class="btn btn-default action">View Details</button>
+              </div>
+            </div>
+            <div id="modalProjectCMHMarketingPages" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title subhead">Childrens Mercy Hospital: Marketing Pages</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="images/screenshots/cmh-marketing-pages.jpg" class="img-responsive"/></div>
+                      <div class="col-sm-6">
+                        <h6 class="secondary-headline sm">Description</h6>
+                        <p>Set of static marketing templates to be used for various advertising campaigns. Supported several different layouts that could be mixed and matched.</p>
+                        <h6 class="secondary-headline sm">Features</h6>
+                        <ul>
+                          <li>Social Media</li>
+                          <li>Video Content</li>
+                          <li>Forms</li>
+                          <li>Icon Font</li>
+                          <li>Easily change elements with simple CSS class changes</li>
+                          <li>Responsive</li>
+                        </ul>
+                        <div class="padding-top"><a href="http://marketing-landing-templates.cmh.levelfivesolutions.net/app/" target="_blank">http://marketing-landing-templates.cmh.levelfivesolutions.net/app/</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="Tool" class="col-sm-3 portfolio-item">
+            <div class="thumb-preview shade-gray-dark"><img src="images/screenshots/l5-color-contrast-checker.jpg" class="img-responsive"/>
+              <div class="content txt-align-center">
+                <h6 class="subhead lg txt-white">Level Five: Color Contrast Checker</h6>
+                <div class="subtitle">Online Tool</div>
+                <button data-toggle="modal" data-target="#modalProjectL5ColorContrastChecker" class="btn btn-default action">View Details</button>
+              </div>
+            </div>
+            <div id="modalProjectL5ColorContrastChecker" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title subhead">Level Five: Color Contrast Checker</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="images/screenshots/l5-color-contrast-checker.jpg" class="img-responsive"/></div>
+                      <div class="col-sm-6">
+                        <h6 class="secondary-headline sm">Description</h6>
+                        <p>Tool to compare color contrasts for usability purposes. Palettes can be sent via URL for sharing.</p>
+                        <h6 class="secondary-headline sm">Features</h6>
+                        <ul>
+                          <li>Custom jQuery plugin</li>
+                          <li>Adheres to web accessibility guidelines</li>
+                          <li>Can share palettes/results</li>
+                        </ul>
+                        <div class="padding-top"><a href="http://color-contrast-checker.plugins.levelfivesolutions.net/admin.html" target="_blank">http://color-contrast-checker.plugins.levelfivesolutions.net/admin.html</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="Marketing" class="col-sm-3 portfolio-item">
+            <div class="thumb-preview shade-blue"><img src="images/screenshots/l5-coffee-and-design.jpg" class="img-responsive"/>
+              <div class="content txt-align-center">
+                <h6 class="subhead lg txt-white">Level Five: Coffee & Design</h6>
+                <div class="subtitle">Marketing Page</div>
+                <button data-toggle="modal" data-target="#modalProjectL5CoffeeAndDesign" class="btn btn-default action">View Details</button>
+              </div>
+            </div>
+            <div id="modalProjectL5CoffeeAndDesign" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title subhead">Level Five Solutions: Coffee &amp; Design</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="images/screenshots/l5-coffee-and-design.jpg" class="img-responsive"/></div>
+                      <div class="col-sm-6">
+                        <h6 class="secondary-headline sm">Description</h6>
+                        <p>Landing page for Coffee & Design promotion. Twitter integration as well as interactive drawing contact form.</p>
+                        <h6 class="secondary-headline sm">Features</h6>
+                        <ul>
+                          <li>Custom Twitter feed</li>
+                          <li>Heavy use of SVG's</li>
+                          <li>Form with drawing tool</li>
+                          <li>Responsive</li>
+                        </ul>
+                        <div class="padding-top"><a href="http://www.levelfivesolutions.com/coffeeanddesign/" target="_blank">http://www.levelfivesolutions.com/coffeeanddesign/</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="Template" class="col-sm-3 portfolio-item">
+            <div class="thumb-preview shade-orange"><img src="images/screenshots/hyla-customer-portal.jpg" class="img-responsive"/>
+              <div class="content txt-align-center">
+                <h6 class="subhead lg txt-white">HYLA Mobile: Customer Portal</h6>
+                <div class="subtitle">Static Templates</div>
+                <button data-toggle="modal" data-target="#modalProjectHylaCustomerPortal" class="btn btn-default action">View Details</button>
+              </div>
+            </div>
+            <div id="modalProjectHylaCustomerPortal" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title subhead">HYLA Mobile: Customer Portal</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="images/screenshots/hyla-customer-portal.jpg" class="img-responsive"/></div>
+                      <div class="col-sm-6">
+                        <h6 class="secondary-headline sm">Description</h6>
+                        <p>Front end templates for new customer portal application. Unfortunately project was never completed but was a really cool project.</p>
+                        <h6 class="secondary-headline sm">Features</h6>
+                        <ul>
+                          <li>Icon font</li>
+                          <li>Highly customized JavaScript</li>
+                          <li>Lots of form elements/actions</li>
+                          <li>Responsive</li>
+                        </ul>
+                        <div class="padding-top"><a href="http://customer-portal-ui.erc.levelfivesolutions.net/" target="_blank">http://customer-portal-ui.erc.levelfivesolutions.net/</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="Template" class="col-sm-3 portfolio-item">
+            <div class="thumb-preview shade-orange"><img src="images/screenshots/hyla-att-buyback.jpg" class="img-responsive"/>
+              <div class="content txt-align-center">
+                <h6 class="subhead lg txt-white">HYLA Mobile: AT&T Buyback</h6>
+                <div class="subtitle">Static Templates</div>
+                <button data-toggle="modal" data-target="#modalProjectHylaATTBuyback" class="btn btn-default action">View Details</button>
+              </div>
+            </div>
+            <div id="modalProjectHylaATTBuyback" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title subhead">HYLA Mobile: AT&amp;T Buyback</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="images/screenshots/hyla-att-buyback.jpg" class="img-responsive"/></div>
+                      <div class="col-sm-6">
+                        <h6 class="secondary-headline sm">Description</h6>
+                        <p>Front end templates for AT&T Buyback application. Lots of fun custom design and interactive elements.</p>
+                        <h6 class="secondary-headline sm">Features</h6>
+                        <ul>
+                          <li>Custom form elements</li>
+                          <li>Highly Customized JavaScript</li>
+                          <li>Lots of SVG's and icon fonts for graphics</li>
+                          <li>Responsive</li>
+                        </ul>
+                        <div class="padding-top"><a href="https://buyback.att.com" target="_blank">https://buyback.att.com</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="Tool" class="col-sm-3 portfolio-item">
+            <div class="thumb-preview shade-gray-dark"><img src="images/screenshots/nope-hello.jpg" class="img-responsive"/>
+              <div class="content txt-align-center">
+                <h6 class="subhead lg txt-white">Nope: Hello</h6>
+                <div class="subtitle">Online Tool</div>
+                <button data-toggle="modal" data-target="#modalProjectNopeHello" class="btn btn-default action">View Details</button>
+              </div>
+            </div>
+            <div id="modalProjectNopeHello" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title subhead">Nope: Hello</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="images/screenshots/nope-hello.jpg" class="img-responsive"/></div>
+                      <div class="col-sm-6">
+                        <h6 class="secondary-headline sm">Description</h6>
+                        <p>Tablet web application to act as contact service in offices. User would choose employee from list on iPad device -- that employee would then be sent an instant message, text message and phone call in sequential order letting them know they have a visitor. Awarded 2nd place at 2013 Rails Rumble. Built in 48 hours with team of four.</p>
+                        <h6 class="secondary-headline sm">Features</h6>
+                        <ul>
+                          <li>Made for iPad devices</li>
+                          <li>Integrated with Ruby on Rails</li>
+                        </ul>
+                        <div class="padding-top"><a href="http://r13.railsrumble.com/entries/winners" target="_blank">http://r13.railsrumble.com/entries/winners</a>
+                          <p><em>Web application has since been taken down.</em></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="Other" class="col-sm-3 portfolio-item">
+            <div class="thumb-preview shade-green"><img src="images/screenshots/jsfiddle-snippets.jpg" class="img-responsive"/>
+              <div class="content txt-align-center">
+                <h6 class="subhead lg txt-white">JSFiddle: Snippets</h6>
+                <div class="subtitle">Code Snippets</div>
+                <button data-toggle="modal" data-target="#modalOtherJsfiddle" class="btn btn-default action">View Details</button>
+              </div>
+            </div>
+            <div id="modalOtherJsfiddle" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title subhead">JSFiddle: Snippets</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="images/screenshots/jsfiddle-snippets.jpg" class="img-responsive"/></div>
+                      <div class="col-sm-6">
+                        <h6 class="secondary-headline sm">Description</h6>
+                        <p>Here are a number of fiddles I've created on JSFiddle.</p>
+                        <h6 class="secondary-headline sm">Links to Fiddles</h6>
+                        <ul>
+                          <li><a href="http://jsfiddle.net/timschieber/VLvSW/" target='_blank'>Create List</a></li>
+                          <li><a href="http://jsfiddle.net/timschieber/FdAyV/" target='_blank'>Disable Body Scroll</a></li>
+                          <li><a href="http://jsfiddle.net/timschieber/33WnR/" target='_blank'>File Upload Validation</a></li>
+                          <li><a href="http://jsfiddle.net/timschieber/m8bT4/" target='_blank'>Honeypot</a></li>
+                          <li><a href="http://jsfiddle.net/timschieber/792e8v1e/" target='_blank'>Responsive Table</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="Template" class="col-sm-3 portfolio-item">
+            <div class="thumb-preview shade-orange"><img src="images/screenshots/aafp-public-site.jpg" class="img-responsive"/>
+              <div class="content txt-align-center">
+                <h6 class="subhead lg txt-white">AAFP: Public Site</h6>
+                <div class="subtitle">Static Templates</div>
+                <button data-toggle="modal" data-target="#modalAAFPPublicSite" class="btn btn-default action">View Details</button>
+              </div>
+            </div>
+            <div id="modalAAFPPublicSite" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title subhead">AAFP: Public Site</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="images/screenshots/aafp-public-site.jpg" class="img-responsive"/></div>
+                      <div class="col-sm-6">
+                        <h6 class="secondary-headline sm">Description</h6>
+                        <p>Public web site for American Academy of Family Physicians. I developed static templates that were then integrated into Adobe CQ.</p>
+                        <h6 class="secondary-headline sm">Features</h6>
+                        <ul>
+                          <li>Large library of styles created</li>
+                          <li>Responsive</li>
+                        </ul>
+                        <div class="padding-top"><a href="http://www.aafp.org/" target="_blank">http://www.aafp.org/</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-workflow" class="section-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 padding-bottom">
+            <h3 class="primary-headline txt-align-center">Workflow</h3>
+            <hr class="hr-fade line-dark"/>
+            <p class="txt-lg">I've worked with many different workflows and am always up for trying something new. But given the opportunity to define my own, here is what I would use...</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="subhead">Getting Started</h5>
+            <ul>
+              <li><strong>Mac/PC</strong>: Comfortable with both but would prefer a Mac.</li>
+              <li><a href="http://brackets.io/" target="_blank"><strong>Brackets</strong></a>: Code editor of choice. Modern, lightweight and lots of plugins.</li>
+              <li><strong>Chrome</strong>: Great developer tools.</li>
+              <li><strong>Retina Screen</strong>: Love making sites look good in hi res.</li>
+              <li><a href="https://nodejs.org/" target="_blank"><strong>Node.js</strong></a>: To run things listed in "Development" column.</li>
+              <li><a href="https://git-scm.com/" target="_blank"><strong>Git</strong></a>: Awesome version control.</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="subhead">Development</h5>
+            <ul>
+              <li><strong>HTML5</strong>: Gotta love those semantic tags.</li>
+              <li><strong>CSS3</strong>: Graceful degradation for older IE browsers.</li>
+              <li><a href="http://gulpjs.com/" target="_blank"><strong>Gulp.js</strong></a>: Easy to use task runner.</li>
+              <li><a href="http://jade-lang.com/" target="_blank"><strong>Jade</strong></a>: Amazing templating engine.</li>
+              <li><a href="http://sass-lang.com/" target="_blank"><strong>Sass</strong></a>: CSS to the next level.</li>
+              <li><a href="https://github.com/ryanbenson/Harvest" target="_blank"><strong>Harvest</strong></a>: Gulp boilerplate.</li>
+              <li><a href="https://icomoon.io/" target="_blank"><strong>IcoMoon</strong></a>: Creating icon fonts.</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="subhead">Frameworks/Plugins</h5>
+            <ul>
+              <li><a href="https://jquery.com/" target="_blank"><strong>jQuery</strong></a>: Simplifying JavaScript usage.</li>
+              <li><a href="http://getbootstrap.com/" target="_blank"><strong>Bootstrap</strong></a>: Probably just the grid but will pull in other things (i.e. modals) as needed.</li>
+              <li><a href="https://daneden.github.io/animate.css/" target="_blank"><strong>Animate.css</strong></a>: Add some simple animations.</li>
+              <li><a href="http://jqueryvalidation.org/" target="_blank"><strong>jQuery Validation Plugin</strong></a>: Front end form validation and handling Ajax submission.</li>
+              <li><a href="http://kenwheeler.github.io/slick/" target="_blank"><strong>slick</strong></a>: Highly customizable and wonderfully responsive carousel.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-contact" class="section-panel bg-gray-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3 class="primary-headline txt-align-center">Contact</h3>
+            <hr class="hr-fade line-dark"/>
+          </div>
+          <div class="col-md-12 txt-align-center">
+            <p class="txt-lg">Feel free to send me a message through my <a href="https://www.linkedin.com/in/timschieber" target=_blank">LinkedIn profile</a>. I'll try my best to get back to you as soon as I can.</p>
+            <p class="txt-lg">I am available for freelance opportunities if the project is a good fit.</p><br/><a href="https://www.linkedin.com/in/timschieber"><span style="font-size: 50px;" class="icon-socicon_linkedin"></span><br />Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="txt-white">Tim Schieber</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="scripts/lib.js"></script>
+    <script src="scripts/plugin.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
 </html>
