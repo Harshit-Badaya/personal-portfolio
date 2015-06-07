@@ -37,6 +37,16 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 
+@media screen and (max-width: $screen-sm) {
+	h1,h2,h3,h4,h5,h6 {
+		&.primary-headline,
+		&.secondary-headline,
+		&.subhead {
+			padding-top: 20px;
+		}
+	}
+}
+
 // Colors
 .txt-white { color: #fff; }
 .txt-black { color: #fff; }

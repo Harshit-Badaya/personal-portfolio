@@ -195,6 +195,9 @@ gulp.task('html-deploy', function() {
 
     gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'));
+	
+	gulp.src('app/assets/**/*')
+        .pipe(gulp.dest('dist/assets'));
 
     //grab all of the styles
     gulp.src(['app/styles/*.css', '!app/styles/styles.css'])
@@ -212,6 +215,7 @@ gulp.task('clean', function() {
 gulp.task('scaffold', function() {
   return shell.task([
       'mkdir dist',
+	  'mkdir dist/assets',
       'mkdir dist/fonts',
       'mkdir dist/images',
       'mkdir dist/scripts',
